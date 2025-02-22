@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1592c946c64b7e18ba03b67454b365c2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1592c946c64b7e18ba03b67454b365c2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1592c946c64b7e18ba03b67454b365c2 = L.map(
+                "map_1592c946c64b7e18ba03b67454b365c2",
+                {
+                    center: [38.1157, 13.3615],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1433bcc1bd65961511d1b2063d36855d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1433bcc1bd65961511d1b2063d36855d.addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var marker_48ec2508d885981a132a9c17b5c89ed0 = L.marker(
+                [38.1166, 13.3597],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_a360d46ef1e371451f27c58703f0f237 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e1\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_48ec2508d885981a132a9c17b5c89ed0.setIcon(div_icon_a360d46ef1e371451f27c58703f0f237);
+        
+    
+        var popup_d0f03123211503cead4f4faa4de501e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59bad8466bb7499e8a9a15bb6c59ebc8 = $(`<div id="html_59bad8466bb7499e8a9a15bb6c59ebc8" style="width: 100.0%; height: 100.0%;">         <h4>1. Quattro Canti</h4>         <p><strong>Horaires :</strong> Accès libre 24h/24</p>         <p><strong>Tarif :</strong> Gratuit</p>         <p>Place octogonale du XVIIe siècle, symbole du baroque sicilien</p>         </div>`)[0];
+                popup_d0f03123211503cead4f4faa4de501e9.setContent(html_59bad8466bb7499e8a9a15bb6c59ebc8);
+            
+        
+
+        marker_48ec2508d885981a132a9c17b5c89ed0.bindPopup(popup_d0f03123211503cead4f4faa4de501e9)
+        ;
+
+        
+    
+    
+            var marker_1fdd3114f48c70a6d30f7253eff1c77b = L.marker(
+                [38.1157, 13.3615],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_c1512ac0e266b4cf8a0c44d25c384292 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e2\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_1fdd3114f48c70a6d30f7253eff1c77b.setIcon(div_icon_c1512ac0e266b4cf8a0c44d25c384292);
+        
+    
+        var popup_592f96f6d10919ba10befe39f480f74f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96d0b457225f6c8267fe069213800e22 = $(`<div id="html_96d0b457225f6c8267fe069213800e22" style="width: 100.0%; height: 100.0%;">         <h4>2. Fontaine Pretoria</h4>         <p><strong>Horaires :</strong> Accès libre</p>         <p><strong>Tarif :</strong> Gratuit</p>         <p>Chef-d'œuvre maniériste du XVIe siècle avec divinités mythologiques</p>         </div>`)[0];
+                popup_592f96f6d10919ba10befe39f480f74f.setContent(html_96d0b457225f6c8267fe069213800e22);
+            
+        
+
+        marker_1fdd3114f48c70a6d30f7253eff1c77b.bindPopup(popup_592f96f6d10919ba10befe39f480f74f)
+        ;
+
+        
+    
+    
+            var marker_ac344a8cbc0c3f20d8803d4b289382fc = L.marker(
+                [38.1155, 13.3621],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_e3d1a49a041fde09aa76906fbfe06cd2 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e3\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_ac344a8cbc0c3f20d8803d4b289382fc.setIcon(div_icon_e3d1a49a041fde09aa76906fbfe06cd2);
+        
+    
+        var popup_2f9e7920ff936660fb2219001cbd6945 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_adac1ee36c75089a01312fd82818e0cb = $(`<div id="html_adac1ee36c75089a01312fd82818e0cb" style="width: 100.0%; height: 100.0%;">         <h4>3. Église Santa Maria dell'Ammiraglio</h4>         <p><strong>Horaires :</strong> 9h30-18h30 (lun-sam), 9h-13h (dim)</p>         <p><strong>Tarif :</strong> 2€</p>         <p>Église byzantine-normande avec mosaïques dorées</p>         </div>`)[0];
+                popup_2f9e7920ff936660fb2219001cbd6945.setContent(html_adac1ee36c75089a01312fd82818e0cb);
+            
+        
+
+        marker_ac344a8cbc0c3f20d8803d4b289382fc.bindPopup(popup_2f9e7920ff936660fb2219001cbd6945)
+        ;
+
+        
+    
+    
+            var marker_3aadf30aaf64ceb6459aeac45fa3fe8a = L.marker(
+                [38.1111, 13.3525],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_92f2ff4af1a49519ec51dd4f4cc2210e = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e4\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_3aadf30aaf64ceb6459aeac45fa3fe8a.setIcon(div_icon_92f2ff4af1a49519ec51dd4f4cc2210e);
+        
+    
+        var popup_d863d37f6f6d0100c22096bff3059889 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6949be5d4f05fb981e1de885b4ca7d6 = $(`<div id="html_c6949be5d4f05fb981e1de885b4ca7d6" style="width: 100.0%; height: 100.0%;">         <h4>4. Palais des Normands</h4>         <p><strong>Horaires :</strong> 8h15-17h40 (lun-sam), 8h15-13h (dim)</p>         <p><strong>Tarif :</strong> 15€</p>         <p>Ancien palais royal avec la Chapelle Palatine</p>         </div>`)[0];
+                popup_d863d37f6f6d0100c22096bff3059889.setContent(html_c6949be5d4f05fb981e1de885b4ca7d6);
+            
+        
+
+        marker_3aadf30aaf64ceb6459aeac45fa3fe8a.bindPopup(popup_d863d37f6f6d0100c22096bff3059889)
+        ;
+
+        
+    
+    
+            var marker_53b0a801bc18ba168d0530e76932491c = L.marker(
+                [38.115, 13.3558],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_823c5d4abccf56ca62c0873b4e71c5c8 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e5\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_53b0a801bc18ba168d0530e76932491c.setIcon(div_icon_823c5d4abccf56ca62c0873b4e71c5c8);
+        
+    
+        var popup_74df63dec2818e948cf90337c1a348f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58971749e479f8087c5c0017956ef643 = $(`<div id="html_58971749e479f8087c5c0017956ef643" style="width: 100.0%; height: 100.0%;">         <h4>5. Cathédrale de Palerme</h4>         <p><strong>Horaires :</strong> 7h-19h (lun-sam), 8h-13h et 16h-19h (dim)</p>         <p><strong>Tarif :</strong> 7-12€</p>         <p>Cathédrale mêlant styles gothique, baroque et néoclassique</p>         </div>`)[0];
+                popup_74df63dec2818e948cf90337c1a348f8.setContent(html_58971749e479f8087c5c0017956ef643);
+            
+        
+
+        marker_53b0a801bc18ba168d0530e76932491c.bindPopup(popup_74df63dec2818e948cf90337c1a348f8)
+        ;
+
+        
+    
+    
+            var marker_287b22c84f184e4c4e35ee84df7ca3d0 = L.marker(
+                [38.1106, 13.3644],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_1d0d17f5bb9e792a89b90d9d4bb0a38f = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e6\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_287b22c84f184e4c4e35ee84df7ca3d0.setIcon(div_icon_1d0d17f5bb9e792a89b90d9d4bb0a38f);
+        
+    
+        var popup_abf726242516fa1faad8f8189ff575d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_844941f50a940ced2b9e479e54f64079 = $(`<div id="html_844941f50a940ced2b9e479e54f64079" style="width: 100.0%; height: 100.0%;">         <h4>6. Marché de Ballarò</h4>         <p><strong>Horaires :</strong> 7h-20h (lun-sam)</p>         <p><strong>Tarif :</strong> Gratuit</p>         <p>Marché historique avec street-food et épices</p>         </div>`)[0];
+                popup_abf726242516fa1faad8f8189ff575d9.setContent(html_844941f50a940ced2b9e479e54f64079);
+            
+        
+
+        marker_287b22c84f184e4c4e35ee84df7ca3d0.bindPopup(popup_abf726242516fa1faad8f8189ff575d9)
+        ;
+
+        
+    
+    
+            var marker_75c985547944239e2c052078c4cfa8c8 = L.marker(
+                [38.1203, 13.3572],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_b4a2ab164d02dcd2291138859ddc76da = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e7\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_75c985547944239e2c052078c4cfa8c8.setIcon(div_icon_b4a2ab164d02dcd2291138859ddc76da);
+        
+    
+        var popup_a0cba789cf399395741feacbf4a3520d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89299625332f36838ed6e0c86269fb75 = $(`<div id="html_89299625332f36838ed6e0c86269fb75" style="width: 100.0%; height: 100.0%;">         <h4>7. Teatro Massimo</h4>         <p><strong>Horaires :</strong> Visites guidées 10h-17h</p>         <p><strong>Tarif :</strong> 10€</p>         <p>Plus grand opéra d'Italie, style néoclassique</p>         </div>`)[0];
+                popup_a0cba789cf399395741feacbf4a3520d.setContent(html_89299625332f36838ed6e0c86269fb75);
+            
+        
+
+        marker_75c985547944239e2c052078c4cfa8c8.bindPopup(popup_a0cba789cf399395741feacbf4a3520d)
+        ;
+
+        
+    
+    
+            var marker_f37d8dac07a7690301f6a14d61b8d3cf = L.marker(
+                [38.1089, 13.3506],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_354dd77b04171faf809bd651cd983af9 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e8\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_f37d8dac07a7690301f6a14d61b8d3cf.setIcon(div_icon_354dd77b04171faf809bd651cd983af9);
+        
+    
+        var popup_5b4ce400e425544471ba4649401c5167 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2cc73dccf368eaa2d375660e47e0f17 = $(`<div id="html_f2cc73dccf368eaa2d375660e47e0f17" style="width: 100.0%; height: 100.0%;">         <h4>8. Catacombes des Capucins</h4>         <p><strong>Horaires :</strong> 9h-12h30 et 15h-17h30</p>         <p><strong>Tarif :</strong> 3€</p>         <p>Catacombes abritant 8000 momies</p>         </div>`)[0];
+                popup_5b4ce400e425544471ba4649401c5167.setContent(html_f2cc73dccf368eaa2d375660e47e0f17);
+            
+        
+
+        marker_f37d8dac07a7690301f6a14d61b8d3cf.bindPopup(popup_5b4ce400e425544471ba4649401c5167)
+        ;
+
+        
+    
+    
+            var marker_578df1bc59d7fe584829e4b9ac086367 = L.marker(
+                [38.1172, 13.3603],
+                {
+}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var div_icon_ba905fdd720a9585e5d9f94638527301 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color: #3388ff; color: white; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px;\"\u003e9\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_578df1bc59d7fe584829e4b9ac086367.setIcon(div_icon_ba905fdd720a9585e5d9f94638527301);
+        
+    
+        var popup_a96d98fc8bc65bbb133d70b32c2cab38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75cd71d9c2815bad6b9f7465a2b3317d = $(`<div id="html_75cd71d9c2815bad6b9f7465a2b3317d" style="width: 100.0%; height: 100.0%;">         <h4>9. Palazzo Branciforte</h4>         <p><strong>Horaires :</strong> 9h30-18h30 (mar-dim)</p>         <p><strong>Tarif :</strong> 8€</p>         <p>Palais Renaissance avec collections d'art</p>         </div>`)[0];
+                popup_a96d98fc8bc65bbb133d70b32c2cab38.setContent(html_75cd71d9c2815bad6b9f7465a2b3317d);
+            
+        
+
+        marker_578df1bc59d7fe584829e4b9ac086367.bindPopup(popup_a96d98fc8bc65bbb133d70b32c2cab38)
+        ;
+
+        
+    
+    
+            var poly_line_c0dcbcbc307ca222084682af68a8059f = L.polyline(
+                [[38.1166, 13.3597], [38.1157, 13.3615], [38.1155, 13.3621], [38.1111, 13.3525], [38.115, 13.3558], [38.1106, 13.3644], [38.1203, 13.3572], [38.1089, 13.3506], [38.1172, 13.3603]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1592c946c64b7e18ba03b67454b365c2);
+        
+    
+            var measure_control_f67be7687dafb9c51fd3e5aca7a76ad8 = new L.Control.Measure(
+                {
+  "position": "topright",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_1592c946c64b7e18ba03b67454b365c2.addControl(measure_control_f67be7687dafb9c51fd3e5aca7a76ad8);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+    
+            var tile_layer_a1fac3af81339b31722c0607568a034c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_7fd46b1d08e512d5b093870499b459e8 = new L.Control.MiniMap(
+                tile_layer_a1fac3af81339b31722c0607568a034c,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": false,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_1592c946c64b7e18ba03b67454b365c2.addControl(mini_map_7fd46b1d08e512d5b093870499b459e8);
+        
+</script>
+</html>
